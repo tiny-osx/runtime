@@ -52,7 +52,7 @@ jobs:
       run: >- 
         dotnet pack -p:BuildNumber="${{ steps.info.outputs.build }}" -p:Copyright="${{ steps.info.outputs.copyright }}"
         --version-suffix prebuild.${{ steps.info.outputs.build }}
-        --verbosity "${{ env.VERBOSITY }}
+        --verbosity "${{ env.VERBOSITY }}"
         --configuration "${{ env.CONFIGURATION }}"
         --include-symbols
 
