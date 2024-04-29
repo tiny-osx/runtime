@@ -32,13 +32,12 @@ jobs:
       id: info
       run: |
         echo "BUILD=$(date +'%Y%m%d')-${{ github.run_number }}" >> $GITHUB_ENV
-        echo "##[set-output name=build;]$(echo $(git rev-list --count HEAD))"
-        echo "##[set-output name=copyright;]$(echo © $(date -u +%Y) Bytewizer.  All rights reserved.)"
-    
+        echo "COPYRIGHT=$(echo © $(date -u +%Y) Bytewizer.  All rights reserved.)" >> $GITHUB_ENV
+        
     - name: Show build information
       run: |
-        echo build=${{ steps.info.outputs.build }}
-        echo copyright=${{ steps.info.outputs.copyright }}
+        echo BUILD=${{ env.BUILD }}
+        echo COPYRIGHT=${{ env.COPYRIGHT }}
      
     - name: Setup .NET Core 
       uses: actions/setup-dotnet@v4
