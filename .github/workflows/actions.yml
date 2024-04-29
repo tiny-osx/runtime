@@ -61,4 +61,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: Prebuild.${{ env.BUILD }} Packages
-        path: "./builds/artifacts/*.nupkg"
+        path: "/home/runner/work/runtime/runtime/src/builds/artifact/*.nupkg"
