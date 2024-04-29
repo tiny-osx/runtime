@@ -31,6 +31,7 @@ jobs:
     - name: Extract build and copyright information into variables
       id: info
       run: |
+        echo "BUILD=$(date +'%Y%m%d')-${{ github.run_number }}" >> $GITHUB_ENV
         echo "##[set-output name=build;]$(echo $(git rev-list --count HEAD))"
         echo "##[set-output name=copyright;]$(echo © $(date -u +%Y) Bytewizer.  All rights reserved.)"
     
@@ -50,7 +51,7 @@ jobs:
     - name: Build and pack runtime libraries project
       working-directory: src/  
       run: >- 
-        dotnet pack -p:BuildNumber="${{ steps.info.outputs.build }}" -p:Copyright="${{ steps.info.outputs.copyright }}"
+        dotnet pack -p:BuildNumber="${{ env.BUILD }}" -p:Copyright="${{ steps.info.outputs.copyright }}"
         --version-suffix prebuild.${{ steps.info.outputs.build }}
         --verbosity ${{ env.VERBOSITY }}
         --configuration ${{ env.CONFIGURATION }}
@@ -59,5 +60,5 @@ jobs:
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: Build Packages ${{ steps.info.outputs.build }}
+        name: Build Packages ${{ env.BUILD }}
         path: "**/bin/${{ env.CONFIGURATION }}/**/*.nupkg"
