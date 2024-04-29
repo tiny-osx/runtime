@@ -62,3 +62,4 @@ jobs:
       with:
         name: Prebuild.${{ env.BUILD }} Packages
         path: "./src/builds/artifacts/**/*.nupkg"
+        if-no-files-found: error
