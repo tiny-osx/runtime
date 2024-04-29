@@ -60,4 +60,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: Build Packages ${{ steps.info.outputs.build }}
-        path: '**/bin/Release/**/*.nupkg'
+        path: '**/bin/${CONFIGURATION}/**/*.nupkg'
