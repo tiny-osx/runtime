@@ -55,9 +55,10 @@ jobs:
         --verbosity ${{ env.VERBOSITY }}
         --configuration ${{ env.CONFIGURATION }}
         --include-symbols
+        --output ./builds/artifacts
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
         name: Prebuild.${{ env.BUILD }} Packages
-        path: "**/bin/${{ env.CONFIGURATION }}/**/*.nupkg"
+        path: "./builds/artifacts/*.nupkg"
