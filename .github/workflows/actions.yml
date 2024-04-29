@@ -38,12 +38,7 @@ jobs:
       run: |
         echo BUILD=${{ env.BUILD }}
         echo COPYRIGHT=${{ env.COPYRIGHT }}
-     
-    - name: Setup .NET Core 
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: ${{ matrix.dotnet }}
-      
+           
     - name: Show .NET Core information
       run: dotnet --info
             
