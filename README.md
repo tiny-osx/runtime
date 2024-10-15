@@ -1,1 +1,1 @@
-# TinyOS Daemon
+# TinyOS Runtime Libraries

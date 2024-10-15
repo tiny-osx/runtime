@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TinyOS.MicroGraphics", "TinyOS.MicroGraphics.csproj", "{55DDD027-63D0-454E-A452-AC5588115970}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyOS.Driver.Graphics", "..\..\libraries\TinyOS.Driver.Graphics\TinyOS.Driver.Graphics.csproj", "{D79CA663-BF19-49C2-ACA0-4A4C9EA7E8B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55DDD027-63D0-454E-A452-AC5588115970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55DDD027-63D0-454E-A452-AC5588115970}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55DDD027-63D0-454E-A452-AC5588115970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55DDD027-63D0-454E-A452-AC5588115970}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D79CA663-BF19-49C2-ACA0-4A4C9EA7E8B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D79CA663-BF19-49C2-ACA0-4A4C9EA7E8B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D79CA663-BF19-49C2-ACA0-4A4C9EA7E8B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D79CA663-BF19-49C2-ACA0-4A4C9EA7E8B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B768D62E-5855-48D0-881F-F178C6079694}
+	EndGlobalSection
+EndGlobal

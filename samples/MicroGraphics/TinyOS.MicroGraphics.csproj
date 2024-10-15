@@ -1,0 +1,13 @@
+﻿<Project Sdk="TinyOS.NET.Sdk/1.0.0-preview.20240527-63">                                                  
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\libraries\TinyOS.Driver.Graphics\TinyOS.Driver.Graphics.csproj" />
+  </ItemGroup>                                                  
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

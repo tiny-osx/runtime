@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TinyOS.GPIO", "TinyOS.GPIO.csproj", "{C839FE08-0E1B-46F3-AE47-FD496CE21089}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyOS.Device.Gpio", "..\..\libraries\TinyOS.Device.Gpio\TinyOS.Device.Gpio.csproj", "{6B8BEEC8-D9BA-4C83-8ABF-8D6768641F25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C839FE08-0E1B-46F3-AE47-FD496CE21089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C839FE08-0E1B-46F3-AE47-FD496CE21089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C839FE08-0E1B-46F3-AE47-FD496CE21089}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C839FE08-0E1B-46F3-AE47-FD496CE21089}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B8BEEC8-D9BA-4C83-8ABF-8D6768641F25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B8BEEC8-D9BA-4C83-8ABF-8D6768641F25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B8BEEC8-D9BA-4C83-8ABF-8D6768641F25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B8BEEC8-D9BA-4C83-8ABF-8D6768641F25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C99DDB7-1B7A-4AC6-9575-4C366F5E539F}
+	EndGlobalSection
+EndGlobal

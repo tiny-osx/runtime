@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TinyOS.Device.Gpio", "TinyOS.Device.Gpio\TinyOS.Device.Gpio.csproj", "{3F3BCB68-2A77-4741-A2EF-779047A7CA01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyOS.Core", "TinyOS.Core\TinyOS.Core.csproj", "{F4951F50-5DA8-45A7-AF82-D2B74041CBFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyOS.Driver.Graphics", "TinyOS.Driver.Graphics\TinyOS.Driver.Graphics.csproj", "{C27C69EB-E6D7-4180-A860-8F715B22A527}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyOS.Driver.Graphics.MicroLayout", "TinyOS.Driver.Graphics.MicroLayout\TinyOS.Driver.Graphics.MicroLayout.csproj", "{4F8658F6-FBBE-402F-8B20-8FF0889B3EFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyOS.Native", "TinyOS.Native\TinyOS.Native.csproj", "{8E6553C8-F247-4BD6-9FFF-2F6BB7FE0D4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyOS.Units", "TinyOS.Units\TinyOS.Units.csproj", "{2A81435A-E73B-4015-8A1E-9BD2B8CCBC09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F3BCB68-2A77-4741-A2EF-779047A7CA01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F3BCB68-2A77-4741-A2EF-779047A7CA01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F3BCB68-2A77-4741-A2EF-779047A7CA01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F3BCB68-2A77-4741-A2EF-779047A7CA01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4951F50-5DA8-45A7-AF82-D2B74041CBFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4951F50-5DA8-45A7-AF82-D2B74041CBFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4951F50-5DA8-45A7-AF82-D2B74041CBFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4951F50-5DA8-45A7-AF82-D2B74041CBFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C27C69EB-E6D7-4180-A860-8F715B22A527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C27C69EB-E6D7-4180-A860-8F715B22A527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C27C69EB-E6D7-4180-A860-8F715B22A527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C27C69EB-E6D7-4180-A860-8F715B22A527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F8658F6-FBBE-402F-8B20-8FF0889B3EFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F8658F6-FBBE-402F-8B20-8FF0889B3EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F8658F6-FBBE-402F-8B20-8FF0889B3EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F8658F6-FBBE-402F-8B20-8FF0889B3EFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E6553C8-F247-4BD6-9FFF-2F6BB7FE0D4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E6553C8-F247-4BD6-9FFF-2F6BB7FE0D4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E6553C8-F247-4BD6-9FFF-2F6BB7FE0D4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E6553C8-F247-4BD6-9FFF-2F6BB7FE0D4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A81435A-E73B-4015-8A1E-9BD2B8CCBC09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A81435A-E73B-4015-8A1E-9BD2B8CCBC09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A81435A-E73B-4015-8A1E-9BD2B8CCBC09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A81435A-E73B-4015-8A1E-9BD2B8CCBC09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2BB36DC-EAF8-43C1-AD64-60B817C6A67B}
+	EndGlobalSection
+EndGlobal
