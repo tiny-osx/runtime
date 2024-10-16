@@ -1,0 +1,246 @@
+<Styles
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:view="clr-namespace:AvaloniaKeyboard.Views">
+	<Design.PreviewWith>
+		<view:KeyboardControl />
+	</Design.PreviewWith>
+
+	<Style Selector="Border.k1">
+		<Setter Property="Margin" Value="1.25" />
+		<Setter Property="Background" Value="{DynamicResource ButtonBackground}" />
+		<Setter Property="CornerRadius" Value="3" />
+		<Setter Property="Height" Value="{Binding KeySize, RelativeSource={RelativeSource FindAncestor, AncestorType=view:KeyboardControl}}" />
+
+		<Style Selector="^:pressed">
+			<Setter Property="Background" Value="{DynamicResource ButtonBackgroundPressed}" />
+		</Style>
+		<Style Selector="^:pointerover">
+			<Setter Property="Background" Value="{DynamicResource ButtonBackgroundPointerOver}" />
+		</Style>
+	</Style>
+
+	<Style Selector="Border.k2">
+		<Setter Property="Background" Value="{DynamicResource ButtonBackgroundPressed}" />
+	</Style>
+
+	<Style Selector="TextBlock.k1">
+		<Setter Property="HorizontalAlignment" Value="Center" />
+		<Setter Property="VerticalAlignment" Value="Center" />
+	</Style>
+
+	<Style Selector="view|KeyboardControl">
+		<Setter Property="Template">
+			<ControlTemplate>
+				<StackPanel>
+					<Grid ColumnDefinitions="*,*,*,*,*,*,*,*,*,*">
+						<Border
+                            Name="Pad01"
+                            Grid.Column="0"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="q" />
+						</Border>
+						<Border
+                            Name="Pad02"
+                            Grid.Column="1"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="w" />
+						</Border>
+						<Border
+                            Name="Pad03"
+                            Grid.Column="2"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="e" />
+						</Border>
+						<Border
+                            Name="Pad04"
+                            Grid.Column="3"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="r" />
+						</Border>
+						<Border
+                            Name="Pad05"
+                            Grid.Column="4"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="t" />
+						</Border>
+						<Border
+                            Name="Pad06"
+                            Grid.Column="5"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="y" />
+						</Border>
+						<Border
+                            Name="Pad07"
+                            Grid.Column="6"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="u" />
+						</Border>
+						<Border
+                            Name="Pad08"
+                            Grid.Column="7"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="i" />
+						</Border>
+						<Border
+                            Name="Pad09"
+                            Grid.Column="8"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="o" />
+						</Border>
+						<Border
+                            Name="Pad10"
+                            Grid.Column="9"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="p" />
+						</Border>
+					</Grid>
+					<Grid ColumnDefinitions=".5*,*,*,*,*,*,*,*,*,*,.5*">
+						<Border
+                            Name="Pad11"
+                            Grid.Column="1"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="a" />
+						</Border>
+						<Border
+                            Name="Pad12"
+                            Grid.Column="2"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="s" />
+						</Border>
+						<Border
+                            Name="Pad13"
+                            Grid.Column="3"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="d" />
+						</Border>
+						<Border
+                            Name="Pad14"
+                            Grid.Column="4"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="f" />
+						</Border>
+						<Border
+                            Name="Pad15"
+                            Grid.Column="5"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="g" />
+						</Border>
+						<Border
+                            Name="Pad16"
+                            Grid.Column="6"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="h" />
+						</Border>
+						<Border
+                            Name="Pad17"
+                            Grid.Column="7"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="j" />
+						</Border>
+						<Border
+                            Name="Pad18"
+                            Grid.Column="8"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="k" />
+						</Border>
+						<Border
+                            Name="Pad19"
+                            Grid.Column="9"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="l" />
+						</Border>
+					</Grid>
+					<Grid ColumnDefinitions="1.5*,.5*,*,*,*,*,*,*,*,.5*,1.5*">
+						<Border
+                            Name="Caps"
+                            Grid.Column="0"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="Caps" />
+						</Border>
+						<Border
+                            Name="Pad20"
+                            Grid.Column="2"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="z" />
+						</Border>
+						<Border
+                            Name="Pad21"
+                            Grid.Column="3"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="x" />
+						</Border>
+						<Border
+                            Name="Pad22"
+                            Grid.Column="4"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="c" />
+						</Border>
+						<Border
+                            Name="Pad23"
+                            Grid.Column="5"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="v" />
+						</Border>
+						<Border
+                            Name="Pad24"
+                            Grid.Column="6"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="b" />
+						</Border>
+						<Border
+                            Name="Pad25"
+                            Grid.Column="7"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="n" />
+						</Border>
+						<Border
+                            Name="Pad26"
+                            Grid.Column="8"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="m" />
+						</Border>
+						<Border
+                            Name="Back"
+                            Grid.Column="10"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="Back" />
+						</Border>
+					</Grid>
+					<Grid ColumnDefinitions="1.5*,1.5*,5*,1.5*,1.5*">
+						<Border
+                            Name="Alt"
+                            Grid.Column="0"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="Alt" />
+						</Border>
+						<Border
+                            Name="Shift"
+                            Grid.Column="1"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="123" />
+						</Border>
+						<Border
+                            Name="Space"
+                            Grid.Column="2"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="Space" />
+						</Border>
+						<Border
+                            Name="Return"
+                            Grid.Column="3"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="Return" />
+						</Border>
+						<Border
+                            Name="Exit"
+                            Grid.Column="4"
+                            Classes="k1">
+							<TextBlock Classes="k1" Text="Exit" />
+						</Border>
+					</Grid>
+				</StackPanel>
+			</ControlTemplate>
+		</Setter>
+	</Style>
+</Styles>

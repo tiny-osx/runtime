@@ -26,6 +26,15 @@ public class WiFiNetworkAdapter : NetworkAdapterBase, IWirelessNetworkAdapter, I
         }
     }
 
+    /// <summary>
+    /// Creates an instance of a WiredNetworkAdapter
+    /// </summary>
+    public WiFiNetworkAdapter()
+        : base(NetworkInterfaceType.Wireless80211)
+    {
+    }
+
+
     // TODO: determine a way to detect this
     /// <summary>
     /// Returns <c>true</c> if the adapter is connected, otherwise <c>false</c>

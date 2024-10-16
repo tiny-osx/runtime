@@ -84,22 +84,22 @@ public abstract partial class PwmChannel : IDisposable
         // }
     }
 
-    private static bool IsBeagleBoneKernel()
-    {
-        try
-        {
-            string kernelVersionInfo = IO.File.ReadAllText(@"/proc/version");
-            // The String.Contains(string, StringComparison) overload wasn't introduced until .Net Standard 2.1
-            return kernelVersionInfo.IndexOf("beagle", StringComparison.InvariantCulture) > 0;
-        }
-        catch (Exception)
-        {
-            // If we can't read the file for some reason, assume it's not a beagle bone.
-            // This ensures we're not suddenly throwing exceptions the clients weren't expecting
-            // at the cost of some potentially weird errors if it is actually a beagle bone kernel.
-            return false;
-        }
-    }
+    // private static bool IsBeagleBoneKernel()
+    // {
+    //     try
+    //     {
+    //         string kernelVersionInfo = IO.File.ReadAllText(@"/proc/version");
+    //         // The String.Contains(string, StringComparison) overload wasn't introduced until .Net Standard 2.1
+    //         return kernelVersionInfo.IndexOf("beagle", StringComparison.InvariantCulture) > 0;
+    //     }
+    //     catch (Exception)
+    //     {
+    //         // If we can't read the file for some reason, assume it's not a beagle bone.
+    //         // This ensures we're not suddenly throwing exceptions the clients weren't expecting
+    //         // at the cost of some potentially weird errors if it is actually a beagle bone kernel.
+    //         return false;
+    //     }
+    // }
 
     /// <summary>
     /// Query information about a component and it's children.
