@@ -4,6 +4,9 @@ using System;
 using System.Net.NetworkInformation;
 using System.Threading.Tasks;
 using TinyOS.Devices;
+using TinyOS.Hosting;
+using TinyOS.Boards;
+using Microsoft.Extensions.Hosting;
 
 namespace TinyOS.Networking;
 
@@ -11,8 +14,33 @@ public class Program
 {
      public static INetworkAdapterCollection NetworkAdapters = new NetworkAdapterCollection();
 
-    public static void Main()
+    public static void Main(string[] args)
     {
+        var builder = BoardApplication.CreateBuilder();
+        
+        builder.Services.AddDiagnostics();
+        builder.Services.AddEthernet();
+        builder.Services.AddTouchScreen();
+        
+        var deamon = builder.Build();
+        deamon.Run();
+
+
+
+        // IHost board = BoardHost.CreateDefaultBuilder()
+        //     .ConfigureServices((context, services) =>
+        //     {
+        //         services.AddDiagnostics();
+        //         //services 
+        //         // services.AddWireless("ssid", "password");
+        //         // services.AddNetworkTime();
+
+        //         // services.AddHostedService(typeof(NetworkStatusService));
+
+        //     }).Build();
+
+        // board.StartAsync();
+
 
         Console.WriteLine("Run...");
 

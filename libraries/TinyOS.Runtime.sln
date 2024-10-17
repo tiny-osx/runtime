@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyOS.Units", "TinyOS.Unit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyOS.Device.Displays.TftSpi", "TinyOS.Device.Displays.TftSpi\TinyOS.Device.Displays.TftSpi.csproj", "{D75E0631-4439-45AB-BAE8-69DDC503C4B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyOS.Boards.Raspberry", "TinyOS.Boards.Raspberry\TinyOS.Boards.Raspberry.csproj", "{486E9833-2FFF-426A-AB8A-7A3E276AF811}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{D75E0631-4439-45AB-BAE8-69DDC503C4B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D75E0631-4439-45AB-BAE8-69DDC503C4B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D75E0631-4439-45AB-BAE8-69DDC503C4B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{486E9833-2FFF-426A-AB8A-7A3E276AF811}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{486E9833-2FFF-426A-AB8A-7A3E276AF811}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{486E9833-2FFF-426A-AB8A-7A3E276AF811}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{486E9833-2FFF-426A-AB8A-7A3E276AF811}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

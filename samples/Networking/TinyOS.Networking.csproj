@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\libraries\TinyOS.Core\TinyOS.Core.csproj" />
+    <ProjectReference Include="..\..\libraries\TinyOS.Boards.Raspberry\TinyOS.Boards.Raspberry.csproj" />
   </ItemGroup>                                                  
 
   <PropertyGroup>
