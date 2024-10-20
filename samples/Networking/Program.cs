@@ -11,6 +11,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using System.Collections.Generic;
 
+using TinyOS.Native;
+
 namespace TinyOS.Networking;
 
 public class Program
@@ -40,42 +42,33 @@ public class Program
             adapters.NetworkConnected += AdapterConnected;
             adapters.NetworkDisconnected += AdapterDisconnected;
         }
-        GetWirelessQuality();
-        GetOsInfo();
-        //GetCpuInfo();
+   
+        var osInfo = Platform.GetOsInfo();
+        var cpuInfo = Platform.GetCpuInfo();
+        var memoryInfo = Platform.GetMemoryInfo();
+        var interfaceInfo = Platform.GetInterfaceInfo();
+        var wirelessInfo = Platform.GetWirelessInfo();
         app.Run();
 
     }
 
-    private static void GetWirelessQuality()
-    {
-        var deviceName = File.ReadAllText("/etc/hostname").Trim();
+        // foreach (var line in lines)
+        // {
+        //     var items = line.Split('\t', StringSplitOptions.RemoveEmptyEntries);
+        //     if (items.Length == 2)
+        //     {
+        //         _cpuInfo.Add(
+        //             items[0].Trim(),
+        //             items[1].Replace("\"", string.Empty).Trim());
+        //     }
+        // }
 
-    }
-    
-    private static void GetOsInfo()
-    {
-        Dictionary<string, string> _osInfo = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-        
-        var content = File.ReadAllText("/etc/os-release");
-        var lines = content.Split('\n');
-        foreach (var line in lines)
-        {
-            var items = line.Split('=', StringSplitOptions.RemoveEmptyEntries);
-            if (items.Length == 2)
-            {
-                _osInfo.Add(
-                    items[0].Trim(),
-                    items[1].Replace("\"", string.Empty).Trim());
-            }
-        }
-    }
+        //  var lines2 = File.ReadAllText("/proc/net/wireless");
+        //  var lines3 = lines2.Split('\n');
 
-    private static void GetCpuInfo()
-    {
-        Dictionary<string, string> data = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+
+        // using var reader = File.OpenText("/proc/cpuinfo");
         
-        using var reader = File.OpenText("/proc/cpuinfo");
 
         // var done = false;
 
@@ -100,7 +93,7 @@ public class Program
         //     }
         //     if (done) break;
         // }
-    }
+    //}
         // IHost board = BoardHost.CreateDefaultBuilder()
         //     .ConfigureServices((context, services) =>
         //     {
