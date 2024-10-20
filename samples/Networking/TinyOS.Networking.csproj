@@ -1,4 +1,5 @@
-﻿<Project Sdk="TinyOS.NET.Sdk/1.0.0-preview.20240527-63">                                                  
+﻿<!-- <Project Sdk="TinyOS.NET.Sdk/1.0.0-preview.20240527-63"> -->
+<Project Sdk="Microsoft.NET.Sdk">                                               
 
   <ItemGroup>
     <ProjectReference Include="..\..\libraries\TinyOS.Core\TinyOS.Core.csproj" />

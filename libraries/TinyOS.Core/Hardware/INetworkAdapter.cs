@@ -60,6 +60,8 @@ public interface INetworkAdapter
     /// </summary>
     event NetworkErrorHandler NetworkError;
 
+    void Refresh();
+
     /// <summary>
     /// Gets the friendly name of the Adapter
     /// </summary>
@@ -85,10 +87,10 @@ public interface INetworkAdapter
     /// </summary>
     IPAddress Gateway { get; }
 
-    /// <summary>
-    /// Physical (MAC) address of the adapter
-    /// </summary>
-    PhysicalAddress MacAddress { get; }
+    // /// <summary>
+    // /// Physical (MAC) address of the adapter
+    // /// </summary>
+    // PhysicalAddress MacAddress { get; }
 
     /// <summary>
     /// DNS Addresses of the network adapter.

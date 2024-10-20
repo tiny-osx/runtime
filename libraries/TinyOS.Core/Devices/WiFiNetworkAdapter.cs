@@ -18,21 +18,18 @@ public class WiFiNetworkAdapter : NetworkAdapterBase, IWirelessNetworkAdapter, I
     /// </summary>
     /// <param name="ni">The associated native interface</param>
     public WiFiNetworkAdapter(NetworkInterface ni)
-        : base(ni)
+        : base(ni, NetworkInterfaceType.Wireless80211)
     {
-        if (ni.NetworkInterfaceType != NetworkInterfaceType.Wireless80211)
-        {
-            throw new ArgumentException();
-        }
+        ArgumentNullException.ThrowIfNull(ni);
     }
 
-    /// <summary>
-    /// Creates an instance of a WiredNetworkAdapter
-    /// </summary>
-    public WiFiNetworkAdapter()
-        : base(NetworkInterfaceType.Wireless80211)
-    {
-    }
+    // /// <summary>
+    // /// Creates an instance of a WiredNetworkAdapter
+    // /// </summary>
+    // public WiFiNetworkAdapter()
+    //     : base(NetworkInterfaceType.Wireless80211)
+    // {
+    // }
 
 
     // TODO: determine a way to detect this

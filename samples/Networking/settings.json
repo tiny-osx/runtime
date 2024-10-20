@@ -1,0 +1,26 @@
+{
+    "usb0": {
+        "Enabled": true
+    },
+    "wlan0": {
+        "Enabled": false,
+        "AutoConnect": false,
+        "AutoReconnect": false,
+        "Ssid": "ssid",
+        "Psk": "password",
+        "IpAddress": "3.3.3.3",
+        "DnsAddresses": "",
+        "SubnetMask": "",
+        "Gateway": ""
+    },
+    "eth0": {
+        "Enabled": false,
+        "IpAddress": "",
+        "DnsAddresses": "",
+        "SubnetMask": "",
+        "Gateway": ""
+    },
+    "Timezone": {
+        "Offset": "-25200"
+    }
+}
